@@ -1,12 +1,18 @@
 //
 //  ExtensionDelegate.swift
-//  WatchHack WatchKit Extension
+//  watchOnlyOntenna WatchKit Extension
 //
-//  Created by momosuke on 2020/07/07.
-//  Copyright © 2020 momosuke. All rights reserved.
+//  Created by Ryo Iijima on 2020/07/18.
+//  Copyright © 2020 ryoiijima. All rights reserved.
 //
 
 import WatchKit
+
+// Create new notification names for entering background and foreground.
+extension Notification.Name {
+    static let didEnterBackground = Notification.Name("didEnterBackground")
+    static let didEnterForeground = Notification.Name("didEnterForeground")
+}
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
@@ -16,11 +22,13 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidBecomeActive() {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        NotificationCenter.default.post(name: .didEnterForeground, object: nil)
     }
 
     func applicationWillResignActive() {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, etc.
+        NotificationCenter.default.post(name: .didEnterBackground, object: nil)
     }
 
     func handle(_ backgroundTasks: Set<WKRefreshBackgroundTask>) {

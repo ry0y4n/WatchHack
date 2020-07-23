@@ -1,9 +1,9 @@
 //
 //  NotificationController.swift
-//  WatchHack WatchKit Extension
+//  watchOnlyOntenna WatchKit Extension
 //
-//  Created by momosuke on 2020/07/07.
-//  Copyright © 2020 momosuke. All rights reserved.
+//  Created by Ryo Iijima on 2020/07/18.
+//  Copyright © 2020 ryoiijima. All rights reserved.
 //
 
 import WatchKit

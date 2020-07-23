@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		513C1C1624C5DB580087A93A /* MicrophoneMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513C1C1524C5DB580087A93A /* MicrophoneMonitor.swift */; };
 		51CCCED324B37CC200083943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CCCED224B37CC200083943 /* AppDelegate.swift */; };
 		51CCCED524B37CC200083943 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CCCED424B37CC200083943 /* SceneDelegate.swift */; };
 		51CCCED724B37CC200083943 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CCCED624B37CC200083943 /* ContentView.swift */; };
@@ -25,6 +26,8 @@
 		51CCCF0224B37CC400083943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51CCCF0124B37CC400083943 /* Assets.xcassets */; };
 		51CCCF0524B37CC400083943 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51CCCF0424B37CC400083943 /* Preview Assets.xcassets */; };
 		51CCCF1824B37DDA00083943 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CCCF1724B37DDA00083943 /* HealthKit.framework */; };
+		51FFBE8324C5F106007D6529 /* MicrophoneMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FFBE8224C5F106007D6529 /* MicrophoneMonitor.swift */; };
+		51FFBE8924C61ADC007D6529 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51FFBE8824C61ADC007D6529 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		513C1C1524C5DB580087A93A /* MicrophoneMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneMonitor.swift; sourceTree = "<group>"; };
 		51CCCECF24B37CC200083943 /* WatchHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51CCCED224B37CC200083943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51CCCED424B37CC200083943 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +98,9 @@
 		51CCCF0724B37CC400083943 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		51CCCF1524B37DDA00083943 /* WatchHack WatchKit ExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchHack WatchKit ExtensionRelease.entitlements"; sourceTree = "<group>"; };
 		51CCCF1724B37DDA00083943 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		51FFBE8224C5F106007D6529 /* MicrophoneMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneMonitor.swift; sourceTree = "<group>"; };
+		51FFBE8724C61ADC007D6529 /* WatchHackRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WatchHackRelease.entitlements; sourceTree = "<group>"; };
+		51FFBE8824C61ADC007D6529 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51FFBE8924C61ADC007D6529 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +126,7 @@
 		51CCCEC624B37CC200083943 = {
 			isa = PBXGroup;
 			children = (
+				513C1C1524C5DB580087A93A /* MicrophoneMonitor.swift */,
 				51CCCED124B37CC200083943 /* WatchHack */,
 				51CCCEE724B37CC300083943 /* WatchHack WatchKit App */,
 				51CCCEF624B37CC400083943 /* WatchHack WatchKit Extension */,
@@ -139,6 +148,7 @@
 		51CCCED124B37CC200083943 /* WatchHack */ = {
 			isa = PBXGroup;
 			children = (
+				51FFBE8724C61ADC007D6529 /* WatchHackRelease.entitlements */,
 				51CCCED224B37CC200083943 /* AppDelegate.swift */,
 				51CCCED424B37CC200083943 /* SceneDelegate.swift */,
 				51CCCED624B37CC200083943 /* ContentView.swift */,
@@ -171,6 +181,7 @@
 		51CCCEF624B37CC400083943 /* WatchHack WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				51FFBE8224C5F106007D6529 /* MicrophoneMonitor.swift */,
 				51CCCF1524B37DDA00083943 /* WatchHack WatchKit ExtensionRelease.entitlements */,
 				51CCCEF724B37CC400083943 /* ContentView.swift */,
 				51CCCEF924B37CC400083943 /* HostingController.swift */,
@@ -196,6 +207,7 @@
 		51CCCF1624B37DDA00083943 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51FFBE8824C61ADC007D6529 /* HealthKit.framework */,
 				51CCCF1724B37DDA00083943 /* HealthKit.framework */,
 			);
 			name = Frameworks;
@@ -336,6 +348,7 @@
 			files = (
 				51CCCED324B37CC200083943 /* AppDelegate.swift in Sources */,
 				51CCCED524B37CC200083943 /* SceneDelegate.swift in Sources */,
+				513C1C1624C5DB580087A93A /* MicrophoneMonitor.swift in Sources */,
 				51CCCED724B37CC200083943 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +359,7 @@
 			files = (
 				51CCCEFA24B37CC400083943 /* HostingController.swift in Sources */,
 				51CCCEF824B37CC400083943 /* ContentView.swift in Sources */,
+				51FFBE8324C5F106007D6529 /* MicrophoneMonitor.swift in Sources */,
 				51CCCEFE24B37CC400083943 /* NotificationController.swift in Sources */,
 				51CCCEFC24B37CC400083943 /* ExtensionDelegate.swift in Sources */,
 				51CCCF0024B37CC400083943 /* NotificationView.swift in Sources */,
@@ -612,6 +626,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchHack/WatchHackRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchHack/Preview Content\"";
 				DEVELOPMENT_TEAM = 7VD6AB4ACB;
